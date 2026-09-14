@@ -51,14 +51,14 @@ export function ProductModal({ product, onClose }: Props) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 24 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="relative z-10 grid max-h-[92vh] w-full max-w-3xl grid-cols-1 overflow-y-auto rounded-t-[2rem] bg-cream shadow-lift sm:grid-cols-2 sm:overflow-hidden sm:rounded-[1.75rem]"
+            className="relative z-10 grid max-h-[92vh] w-full max-w-3xl grid-cols-1 overflow-y-auto rounded-t-md bg-cream shadow-lift sm:grid-cols-2 sm:overflow-hidden sm:rounded-md"
           >
             <button
               ref={closeRef}
               type="button"
               onClick={onClose}
               aria-label="Cerrar"
-              className="absolute right-4 top-4 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-cream/90 text-ink shadow-soft transition-colors hover:text-gold-700"
+              className="absolute right-4 top-4 z-10 inline-flex h-10 w-10 items-center justify-center bg-cream/90 text-ink shadow-soft transition-colors hover:text-gold-700"
             >
               <X size={18} />
             </button>
@@ -102,7 +102,7 @@ export function ProductModal({ product, onClose }: Props) {
                 {product.highlights.map((h) => (
                   <li
                     key={h}
-                    className="rounded-full border border-gold-300/50 bg-gold-100/50 px-3 py-1 text-xs font-medium text-gold-700"
+                    className="border border-gold-300/50 bg-gold-100/50 px-3 py-1 text-xs font-medium text-gold-700"
                   >
                     {h}
                   </li>
@@ -113,7 +113,7 @@ export function ProductModal({ product, onClose }: Props) {
                 href={WA.product(product.name)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-4 text-sm font-semibold text-night shadow-gold transition-all duration-300 ease-premium hover:bg-gold-400"
+                className="mt-8 inline-flex items-center justify-center gap-2 bg-gold-500 px-6 py-4 text-sm font-semibold text-night shadow-gold transition-all duration-300 ease-premium hover:bg-gold-400"
               >
                 <WhatsAppIcon className="h-4 w-4" />
                 Consultar disponibilidad y precio

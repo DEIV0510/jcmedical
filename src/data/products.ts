@@ -13,6 +13,8 @@ import massageOilLg from '../assets/products/massage_oil@lg.webp'
 import shampoo from '../assets/products/shampoo.webp'
 import shampooLg from '../assets/products/shampoo@lg.webp'
 
+export type ProductGroup = 'sublingual' | 'topico' | 'capilar'
+
 export type Product = {
   id: string
   name: string
@@ -24,8 +26,15 @@ export type Product = {
   highlights: string[]
   image: string
   imageLg: string
+  group: ProductGroup
   featured?: boolean
 }
+
+export const PRODUCT_GROUPS: { key: ProductGroup; label: string }[] = [
+  { key: 'sublingual', label: 'Aceites y extractos sublinguales' },
+  { key: 'topico', label: 'Uso tópico y corporal' },
+  { key: 'capilar', label: 'Cuidado capilar' },
+]
 
 export const PRODUCTS: Product[] = [
   {
@@ -40,6 +49,7 @@ export const PRODUCTS: Product[] = [
     highlights: ['100% CBD', 'Formato gotero de precisión', 'Elaborado en Colombia'],
     image: cbdOil,
     imageLg: cbdOilLg,
+    group: 'sublingual',
     featured: true,
   },
   {
@@ -54,6 +64,7 @@ export const PRODUCTS: Product[] = [
     highlights: ['CBD + THC 92/8', 'Línea premium', 'Formato concentrado 5 ml'],
     image: blackOil,
     imageLg: blackOilLg,
+    group: 'sublingual',
   },
   {
     id: 'pure-premium-cannabis-extract',
@@ -67,6 +78,7 @@ export const PRODUCTS: Product[] = [
     highlights: ['100% Cannabis', 'Formato 50 ml', 'Elaborado en Colombia'],
     image: extract,
     imageLg: extractLg,
+    group: 'sublingual',
   },
   {
     id: 'gel-analgesico-antiinflamatorio',
@@ -80,6 +92,7 @@ export const PRODUCTS: Product[] = [
     highlights: ['Uso tópico', 'Dos presentaciones', 'Elaborado en Colombia'],
     image: gel,
     imageLg: gelLg,
+    group: 'topico',
   },
   {
     id: 'full-spectrum-gel',
@@ -93,6 +106,7 @@ export const PRODUCTS: Product[] = [
     highlights: ['Espectro completo', 'Textura en gel', 'Elaborado en Colombia'],
     image: fullSpectrum,
     imageLg: fullSpectrumLg,
+    group: 'topico',
   },
   {
     id: 'massage-oil',
@@ -106,6 +120,7 @@ export const PRODUCTS: Product[] = [
     highlights: ['Especial para masaje', 'Sensación envolvente', 'Elaborado en Colombia'],
     image: massageOil,
     imageLg: massageOilLg,
+    group: 'topico',
   },
   {
     id: 'shampoo-cbd',
@@ -119,5 +134,6 @@ export const PRODUCTS: Product[] = [
     highlights: ['Con quina y cola de caballo', 'Libre de sal', 'Controla el frizz'],
     image: shampoo,
     imageLg: shampooLg,
+    group: 'capilar',
   },
 ]
