@@ -1,0 +1,98 @@
+@import '@fontsource/fraunces/400.css';
+@import '@fontsource/fraunces/500.css';
+@import '@fontsource/fraunces/600.css';
+@import '@fontsource/fraunces/400-italic.css';
+@import '@fontsource/fraunces/500-italic.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: #fbf8f1;
+  color: #211d16;
+  font-feature-settings: 'ss01' 1, 'cv01' 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: #cda764;
+  color: #17140f;
+}
+
+:focus-visible {
+  outline: 2px solid #b98a46;
+  outline-offset: 3px;
+}
+
+.container-page {
+  width: 100%;
+  max-width: 1360px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-page {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-page {
+    padding-inline: 3rem;
+  }
+}
+
+.text-gold-gradient {
+  background: linear-gradient(120deg, #78552c 0%, #cda764 42%, #efd9a4 58%, #b98a46 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.font-feature-numeric {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes gold-sheen {
+  0% {
+    background-position: -150% 0;
+  }
+  100% {
+    background-position: 250% 0;
+  }
+}
+
+.animate-gold-sheen {
+  background-image: linear-gradient(
+    100deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.55) 46%,
+    rgba(255, 255, 255, 0.55) 54%,
+    transparent 70%
+  );
+  background-size: 250% 100%;
+  animation: gold-sheen 3.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-gold-sheen {
+    animation: none;
+  }
+}
