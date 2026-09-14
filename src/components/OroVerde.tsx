@@ -5,10 +5,10 @@ import { WA } from '../data/site'
 
 export function OroVerde() {
   return (
-    <section id="inversionistas" className="bg-paper/50 py-24 lg:py-32">
+    <section id="inversionistas" className="bg-paper/50 py-14 lg:py-32">
       <div className="container-page">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[2rem] border border-gold-300/40 bg-gradient-to-br from-[#2A2116] via-[#3A2E1B] to-[#4E3C1F] px-6 py-16 text-center sm:px-14 sm:py-20">
+          <div className="relative overflow-hidden rounded-[2rem] border border-gold-300/40 bg-gradient-to-br from-[#2A2116] via-[#3A2E1B] to-[#4E3C1F] px-6 py-12 text-center sm:px-14 sm:py-20">
             <BotanicalMotif className="pointer-events-none absolute -left-14 -top-10 h-56 w-56 rotate-12 text-gold-300/10" />
             <BotanicalMotif className="pointer-events-none absolute -right-14 -bottom-14 h-56 w-56 -rotate-12 text-gold-300/10" />
 

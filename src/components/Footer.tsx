@@ -6,9 +6,9 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-cream/10 bg-night pb-10 pt-16 lg:pt-20">
+    <footer className="border-t border-cream/10 bg-night pb-8 pt-12 lg:pt-20">
       <div className="container-page">
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr]">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr] lg:gap-12">
           <div>
             <img src={logoIcon} alt="JC Medical Corp SAS" className="h-9 w-auto" width={160} height={90} />
             <p className="mt-3 font-display text-lg text-cream">JC Medical Corp SAS</p>
@@ -67,7 +67,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-cream/10 pt-8 text-xs text-cream/60 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-4 border-t border-cream/10 pt-6 text-xs text-cream/60 sm:flex-row sm:items-center sm:justify-between lg:mt-14 lg:pt-8">
           <p>© {year} JC Medical Corp SAS. Todos los derechos reservados.</p>
           <p>Bogotá, Colombia</p>
         </div>

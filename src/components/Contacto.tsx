@@ -14,8 +14,8 @@ const SOCIALS = [
 
 export function Contacto() {
   return (
-    <section id="contacto" className="bg-night py-24 lg:py-32">
-      <div className="container-page grid grid-cols-1 gap-16 lg:grid-cols-[1fr_0.9fr] lg:gap-10">
+    <section id="contacto" className="bg-night py-14 lg:py-32">
+      <div className="container-page grid grid-cols-1 gap-10 lg:grid-cols-[1fr_0.9fr] lg:gap-10">
         <Reveal>
           <Eyebrow tone="cream">Contacto</Eyebrow>
           <h2 className="mt-5 font-display font-medium leading-[1.08] text-cream text-4xl sm:text-5xl">
@@ -43,7 +43,7 @@ export function Contacto() {
             </ButtonLink>
           </div>
 
-          <div className="mt-12 flex gap-3">
+          <div className="mt-8 flex gap-3 lg:mt-12">
             {SOCIALS.map(({ href, label, Icon }) => (
               <a
                 key={label}

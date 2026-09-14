@@ -7,9 +7,9 @@ const PROCESS = ['Cultivo', 'Desarrollo', 'Producción', 'Comercialización']
 
 export function QuienesSomos() {
   return (
-    <section id="nosotros" className="relative bg-cream py-24 lg:py-32">
-      <div className="container-page grid grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-20">
-        <Reveal className="relative order-2 lg:order-1">
+    <section id="nosotros" className="relative bg-cream py-14 lg:py-32">
+      <div className="container-page grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-20">
+        <Reveal className="relative order-2 lg:order-1 lg:pb-10">
           <div className="relative aspect-[4/5] max-w-md overflow-hidden rounded-[1.75rem] shadow-lift lg:max-w-none">
             <img
               src={blackOil}
@@ -21,7 +21,7 @@ export function QuienesSomos() {
             />
           </div>
           <BotanicalSprig className="pointer-events-none absolute -right-8 -top-10 hidden h-40 w-24 text-gold-400/50 lg:block" />
-          <div className="absolute -bottom-7 right-4 max-w-[240px] rounded-2xl border border-gold-300/50 bg-cream/95 p-5 shadow-soft backdrop-blur sm:right-10">
+          <div className="relative mt-4 max-w-[240px] rounded-2xl border border-gold-300/50 bg-cream/95 p-5 shadow-soft backdrop-blur sm:absolute sm:-bottom-7 sm:right-10 sm:mt-0">
             <p className="font-display italic text-lg leading-snug text-ink">
               “Una visión colombiana con posibilidades internacionales.”
             </p>

@@ -39,8 +39,8 @@ export function Navbar() {
             srcSet={`${logo} 1x, ${logo2x} 2x`}
             alt="JC Medical Corp SAS"
             className="h-11 w-auto lg:h-12"
-            width={160}
-            height={62}
+            width={140}
+            height={124}
           />
         </a>
 

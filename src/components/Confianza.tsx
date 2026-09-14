@@ -27,7 +27,7 @@ const TRUST_POINTS = [
 
 export function Confianza() {
   return (
-    <section className="bg-cream py-20 lg:py-24">
+    <section className="bg-cream py-14 lg:py-24">
       <div className="container-page">
         <Reveal className="max-w-xl">
           <Eyebrow>Confianza y respaldo</Eyebrow>
@@ -36,7 +36,7 @@ export function Confianza() {
           </h2>
         </Reveal>
 
-        <RevealGroup className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-ink/8 bg-ink/8 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-8 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-ink/8 bg-ink/8 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4">
           {TRUST_POINTS.map(({ icon: Icon, title, text }) => (
             <RevealItem key={title} className="bg-cream p-7">
               <Icon size={22} strokeWidth={1.5} className="text-gold-600" />

@@ -17,7 +17,7 @@ export function Hero() {
   const ease = [0.16, 1, 0.3, 1] as const
 
   return (
-    <section id="inicio" className="relative overflow-hidden bg-cream pt-[92px] pb-16 lg:pt-[150px] lg:pb-28">
+    <section id="inicio" className="relative overflow-hidden bg-cream pt-[84px] pb-10 lg:pt-[150px] lg:pb-28">
       <div
         className="pointer-events-none absolute -right-40 -top-24 h-[520px] w-[520px] rounded-full opacity-60 blur-3xl"
         style={{ background: 'radial-gradient(circle, #F6E9CE 0%, transparent 70%)' }}

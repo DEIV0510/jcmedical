@@ -6,8 +6,8 @@ const FOCUS_AREAS = ['Cultivos tecnificados', 'Desarrollo de producto', 'Exporta
 
 export function ProyeccionInternacional() {
   return (
-    <section id="proyeccion" className="relative overflow-hidden bg-cream py-24 lg:py-32">
-      <div className="container-page grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-10">
+    <section id="proyeccion" className="relative overflow-hidden bg-cream py-14 lg:py-32">
+      <div className="container-page grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-10">
         <Reveal>
           <Eyebrow>Proyección internacional</Eyebrow>
           <h2 className="mt-5 font-display font-medium leading-[1.08] text-ink text-4xl sm:text-5xl">
@@ -27,7 +27,7 @@ export function ProyeccionInternacional() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.15} className="relative aspect-[4/3] w-full">
+        <Reveal delay={0.15} className="relative aspect-[16/10] w-full sm:aspect-[4/3]">
           <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-paper to-gold-100/40" />
           <GoldRoute className="absolute inset-0 h-full w-full p-8 text-gold-600" />
         </Reveal>

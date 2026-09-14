@@ -28,7 +28,7 @@ const PILLARS = [
 
 export function CultivoCalidad() {
   return (
-    <section id="calidad" className="relative overflow-hidden bg-night py-24 lg:py-32">
+    <section id="calidad" className="relative overflow-hidden bg-night py-14 lg:py-32">
       <BotanicalMotif className="pointer-events-none absolute -left-16 bottom-0 h-72 w-72 text-gold-500/10" />
       <BotanicalMotif className="pointer-events-none absolute -right-20 top-10 h-80 w-80 rotate-45 text-gold-500/[0.07]" />
 
@@ -42,7 +42,7 @@ export function CultivoCalidad() {
           />
         </Reveal>
 
-        <RevealGroup className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <RevealGroup className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
           {PILLARS.map(({ icon: Icon, title, text }) => (
             <RevealItem
               key={title}
@@ -57,7 +57,7 @@ export function CultivoCalidad() {
           ))}
         </RevealGroup>
 
-        <Reveal delay={0.15} className="mt-14 border-t border-cream/10 pt-10">
+        <Reveal delay={0.15} className="mt-10 border-t border-cream/10 pt-8 lg:mt-14 lg:pt-10">
           <p className="max-w-2xl font-display text-xl italic leading-relaxed text-cream/85">
             “Desde Colombia para el mundo: desarrollamos un proyecto de cannabis no
             psicoactivo y CBD, con cultivos tecnificados, enfoque en calidad y una

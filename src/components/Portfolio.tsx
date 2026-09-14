@@ -16,7 +16,7 @@ export function Portfolio() {
   const featured = PRODUCTS.find((p) => p.featured)
 
   return (
-    <section id="productos" className="bg-paper/50 py-24 lg:py-32">
+    <section id="productos" className="bg-paper/50 py-14 lg:py-32">
       <div className="container-page">
         <Reveal>
           <SectionIntro
@@ -27,12 +27,12 @@ export function Portfolio() {
         </Reveal>
 
         {featured && (
-          <div className="mt-14 lg:mt-16">
+          <div className="mt-10 lg:mt-16">
             <ProductCard product={featured} onViewDetails={setSelected} variant="featured" />
           </div>
         )}
 
-        <div className="mt-16 space-y-16 lg:mt-20 lg:space-y-20">
+        <div className="mt-10 space-y-10 lg:mt-20 lg:space-y-20">
           {PRODUCT_GROUPS.map((group) => {
             const items = PRODUCTS.filter((p) => p.group === group.key && !p.featured)
             if (items.length === 0) return null
@@ -40,7 +40,7 @@ export function Portfolio() {
 
             return (
               <div key={group.key}>
-                <Reveal className="mb-6 flex items-center gap-4 lg:mb-8">
+                <Reveal className="mb-5 flex items-center gap-4 lg:mb-8">
                   <h3 className="shrink-0 text-xs font-semibold uppercase tracking-widest2 text-ink-soft">
                     {group.label}
                   </h3>
@@ -63,7 +63,7 @@ export function Portfolio() {
           })}
         </div>
 
-        <Reveal delay={0.1} className="mt-16 text-center lg:mt-20">
+        <Reveal delay={0.1} className="mt-10 text-center lg:mt-20">
           <p className="text-sm text-ink-faint">
             Precios sujetos a consulta. Nuestro equipo te confirma disponibilidad y valores vigentes por WhatsApp.
           </p>
